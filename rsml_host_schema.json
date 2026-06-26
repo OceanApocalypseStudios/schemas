@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "SystemName": {
+            "type": "string",
+            "nullable": true,
+            "description": "The name of the system. Can be null. Use 'linux' for Linux."
+        },
+        "SystemVersion": {
+            "type": "integer",
+            "nullable": false,
+            "description": "The version of the system or distro. Use -1 for null."
+        },
+        "DistroName": {
+            "type": "string",
+            "nullable": true,
+            "description": "The name of the Linux distribution. Can be null."
+        },
+        "DistroFamily": {
+            "type": "string",
+            "nullable": true,
+            "description": "The family of the Linux distribution. Can be null."
+        },
+        "ProcessorArchitecture": {
+            "type": "string",
+            "nullable": true,
+            "description": "The architecture of the processor. Can be null."
+        },
+    },
+    "required": []
+}
